@@ -61,11 +61,17 @@ function calcularCoupon(){
             descuento =25;
         break;
        // default: descuento = 0;
-       default: alert("El cupon es invalido, tu total sería: $" +price2Value);
+       default: descuento=0;
     }
-
-    const precioConDescuento = calcularPrecioConDescuento(price2Value, descuento);
-    const resultC=document.getElementById("ResultC");
+const resultC=document.getElementById("ResultC");
+    if (descuento === 0){
+        resultC.innerText = "Cupon no valido pagaras el total de: $" + price2Value;
+    }else{
+       const precioConDescuento = calcularPrecioConDescuento(price2Value, descuento);
+    
     resultC.innerText ="El precio con descuento son: $"+ precioConDescuento;
 
+    }
+
+   
 }
