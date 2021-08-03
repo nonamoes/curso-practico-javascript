@@ -16,3 +16,9 @@
 - 3: Crear funciones 
 - 4: Integrar JS con HTML
 
+## Taller #2: Promedio, Mediana y Moda.
+
+- 1: Definir las formas.
+- 2: Implementar las formulas en JS
+- 3: Crear funciones 
+- 4: Integrar JS con HTML
